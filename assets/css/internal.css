@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url("global.css");
 @import url("components/navigator.css");
+@import url("components/pills.css");
 
 .s-wrapper {
   display: flex;
