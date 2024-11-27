@@ -25,13 +25,13 @@ body::before {
   position: relative;
 }
 
-.s-menu-item {
+.s-menu__item {
   display: inline-block;
   text-transform: uppercase;
   margin: 0 1.25rem;
 }
 
-.s-menu-icon {
+.s-menu__icon {
   width: 2.5rem;
   margin: 0 1.25rem;
   vertical-align: middle;
@@ -53,7 +53,7 @@ body::before {
   transition: filter 0.5s ease-in-out;
 }
 
-.s-card-background {
+.s-card__background {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -62,7 +62,7 @@ body::before {
   transition: opacity 1s ease-in-out;
 }
 
-.s-card-image {
+.s-card__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -70,7 +70,7 @@ body::before {
   transition: transform 1s ease-in-out;
 }
 
-.s-card-title {
+.s-card__title {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
@@ -88,7 +88,7 @@ body::before {
   margin-top: 3rem;
 }
 
-.s-controller-button {
+.s-controller__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,15 +105,15 @@ body::before {
   transition: transform 0.3s ease-in-out;
 }
 
-.s-controller-button:nth-child(2) {
+.s-controller__button:nth-child(2) {
   margin: 0 3.75rem;
 }
 
-.s-controller-button:hover {
+.s-controller__button:hover {
   transform: scale(1.1);
 }
 
-.s-controller-line {
+.s-controller__line {
   background-color: white;
   width: 50%;
   height: 2px;
@@ -121,25 +121,25 @@ body::before {
 }
 
 /* Hover Animation */
-.s-card-hovered .s-card-background {
+.s-card--hovered .s-card__background {
   cursor: pointer;
   opacity: 0;
 }
 
-.s-card-hovered .s-card-image {
+.s-card--hovered .s-card__image {
   transform: scale(1.4);
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
 }
 
-body#spider-man-01-hovered::before {
+body#spider-man-01--hovered::before {
   background-image: url("../images/pic-sm-bg-01.jpg");
 }
 
-body#spider-man-02-hovered::before {
+body#spider-man-02--hovered::before {
   background-image: url("../images/pic-sm-bg-02.jpg");
 }
 
-body#spider-man-03-hovered::before {
+body#spider-man-03--hovered::before {
   background-image: url("../images/pic-sm-bg-03.jpg");
 }
 
@@ -147,10 +147,10 @@ body[id^="spider-man-"]::before {
   opacity: 1;
 }
 
-body[id^="spider-man-"] .s-card:not(.s-card-hovered) {
+body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   filter: grayscale(100%);
 }
 
-.s-card-hovered .s-card-title {
+.s-card-hovered .s-card__title {
   bottom: 50%;
 }
