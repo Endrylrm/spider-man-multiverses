@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiverso | Tobey Maguire</title>
     <link rel="stylesheet" href="../../assets/css/internal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
   </head>
   <body>
     <div class="s-wrapper">
+      <video autoplay loop muted>
+        <source
+          src="../../assets/videos/spiderman-2002-trailer.mp4"
+          type="video/mp4"
+        />
+      </video>
       <div class="s-left-column">
         <nav class="navigator">
           <div class="navigator__icon">
@@ -74,30 +84,51 @@
           <div class="gallery">
             <ul>
               <li>
-                <a href="#"
-                  ><img
+                <a
+                  data-fancybox="gallery"
+                  href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg"
+                >
+                  <img
                     src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png"
                     alt="Foto demonstrativa do Spider-Man (2002)"
-                /></a>
+                  />
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img
+                <a
+                  data-fancybox="gallery"
+                  href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg"
+                >
+                  <img
                     src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png"
                     alt="Foto demonstrativa do Spider-Man (2002)"
-                /></a>
+                  />
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img
+                <a
+                  data-fancybox="gallery"
+                  href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg"
+                >
+                  <img
                     src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png"
                     alt="Foto demonstrativa do Spider-Man (2002)"
-                /></a>
+                  />
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options
+      });
+    </script>
   </body>
 </html>
